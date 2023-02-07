@@ -11,7 +11,6 @@ public class Hashmap {
         Students.put(100, "Abisha");
         Students.put(101, "Srini");
         Students.put(102, "Ruchi");
-
         l.info("After invoking put() method ");
         for (Map.Entry m : Students.entrySet()) {
             l.info(m.getKey() + " " + m.getValue());
