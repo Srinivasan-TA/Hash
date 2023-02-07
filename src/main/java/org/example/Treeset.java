@@ -15,7 +15,7 @@ public class Treeset {
         l.log(Level.INFO,()->"An initial list of Cities in TN: "+cites);
         cites.remove("Chennai");
         l.log(Level.INFO,()->"After invoking remove method: "+cites);
-        HashSet<String> set1=new HashSet<String>();
+        TreeSet<String> set1=new TreeSet<String>();
         set1.add("Coimbatore");
         set1.add("Trichy");
         cites.addAll(set1);
