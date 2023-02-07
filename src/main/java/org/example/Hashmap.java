@@ -1,6 +1,5 @@
 package org.example;
 import java.util.*;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Hashmap {
@@ -8,7 +7,7 @@ public class Hashmap {
     public static void main(String[] args) {
         Logger l = Logger.getLogger("com.api.jar");
         HashMap<Integer, String> Students = new HashMap<Integer, String>();
-        l.log(Level.INFO,()->"The names added are " + Students);
+        l.info("The names added are " + Students);
         Students.put(100, "Abisha");
         Students.put(101, "Srini");
         Students.put(102, "Ruchi");
