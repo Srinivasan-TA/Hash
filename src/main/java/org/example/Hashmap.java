@@ -14,13 +14,13 @@ public class Hashmap {
 
         l.info("After invoking put() method ");
         for (Map.Entry m : Students.entrySet()) {
-            System.out.println(m.getKey() + " " + m.getValue());
+            l.info(m.getKey() + " " + m.getValue());
         }
 
         Students.putIfAbsent(103, "Bargavi");
         l.info("After invoking putIfAbsent() method ");
         for (Map.Entry m : Students.entrySet()) {
-            System.out.println(m.getKey() + " " + m.getValue());
+            l.info(m.getKey() + " " + m.getValue());
         }
         HashMap<Integer, String> map = new HashMap<Integer, String>();
         map.put(104, "Priya");
