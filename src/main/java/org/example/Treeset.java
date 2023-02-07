@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.*;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Treeset {
@@ -11,20 +12,20 @@ public class Treeset {
         cites.add("Palakad");
         cites.add("Madurai");
         cites.add("Chennai");
-        l.info("An initial list of Cities in TN: "+cites);
+        l.log(Level.INFO,()->"An initial list of Cities in TN: "+cites);
         cites.remove("Chennai");
-        l.info("After invoking remove method: "+cites);
+        l.log(Level.INFO,()->"After invoking remove method: "+cites);
         HashSet<String> set1=new HashSet<String>();
         set1.add("Coimbatore");
         set1.add("Trichy");
         cites.addAll(set1);
-        l.info("Updated Cites in TN: "+cites);
+        l.log(Level.INFO,()->"Updated Cites in TN: "+cites);
         cites.removeAll(set1);
-        l.info("After invoking removeAll() method: "+cites);
+        l.log(Level.INFO,()->"After invoking removeAll() method: "+cites);
         cites.removeIf(str->str.contains("Palakad"));
-        l.info("After invoking "+cites);
+        l.log(Level.INFO,()->"After invoking "+cites);
         cites.clear();
-        l.info("After invoking clear() method: "+cites);
+        l.log(Level.INFO,()->"After invoking clear() method: "+cites);
     }
 
 }
