@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 
 public class Hashmap {
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Logger l = Logger.getLogger("com.api.jar");
         HashMap<Integer, String> Students = new HashMap<Integer, String>();
         l.info("The names added are " + Students);
