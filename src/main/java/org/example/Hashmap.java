@@ -14,7 +14,6 @@ public class Hashmap {
         l.info("After invoking put() method ");
         l.log(Level.INFO,()->"Names of students are "+students);
         String length ="Total no of students are "+ students.size();
-//       String length ="Total no of students are "+ students.size();
         l.info(length);
         students.remove(101, "Srini");
         l.info("After invoking putIfAbsent() method ");
