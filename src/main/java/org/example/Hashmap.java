@@ -1,5 +1,7 @@
 package org.example;
 import java.util.*;
+import java.util.function.Supplier;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class Hashmap {
@@ -11,8 +13,9 @@ public class Hashmap {
         students.put(101, "Srini");
         students.put(102, "Ruchi");
         l.info("After invoking put() method ");
-        l.info("The names added are " + students);
-        String length =String.valueOf(students.size());
+        l.log(Level.INFO,()->"Names of students are "+students);
+        String length ="Total no of students are "+ students.size();
+//       String length ="Total no of students are "+ students.size();
         l.info(length);
         students.remove(101, "Srini");
         l.info("After invoking putIfAbsent() method ");
