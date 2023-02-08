@@ -12,6 +12,8 @@ public class Hashmap {
         students.put(102, "Ruchi");
         l.info("After invoking put() method ");
         l.info("The names added are " + students);
+        String length =String.valueOf(students.size());
+        l.info(length);
         students.remove(101, "Srini");
         l.info("After invoking putIfAbsent() method ");
         l.info("The names added are " + students);
