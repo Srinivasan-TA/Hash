@@ -17,6 +17,7 @@ public class Hashmap {
         l.info(length);
         students.remove(101, "Srini");
         l.info("After invoking putIfAbsent() method ");
-        l.info("The names added are " + students);
+        l.log(Level.INFO,()->"Names of students added are "+students);
+
     }
 }
