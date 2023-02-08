@@ -6,27 +6,22 @@ public class Hashmap {
 
     public static void main(String[] args) {
         Logger l = Logger.getLogger("com.api.jar");
-        HashMap<Integer, String> students = new HashMap<Integer, String>();
-        l.info("The names added are " + students);
+        HashMap<Integer, String> students = new HashMap<>();
         students.put(100, "Abisha");
         students.put(101, "Srini");
         students.put(102, "Ruchi");
         l.info("After invoking put() method ");
-        for (Map.Entry m : students.entrySet()) {
-            l.info(m.getKey() + " " + m.getValue());
+        Iterator<String> i= students.values().iterator();
+        while(i.hasNext()){
+            l.info(i.next());
         }
-
-        students.putIfAbsent(103, "Bargavi");
+        students.remove(101, "Srini");
         l.info("After invoking putIfAbsent() method ");
-        for (Map.Entry m : students.entrySet()) {
-            l.info(m.getKey() + " " + m.getValue());
-        }
-        HashMap<Integer, String> map = new HashMap<Integer, String>();
-        map.put(104, "Priya");
-        map.putAll(students);
-        l.info("After invoking putAll() method ");
-        for (Map.Entry m : map.entrySet()) {
-            l.info(m.getKey() + " " + m.getValue());
+        l.info("The names added are " + students);
+
+
+        while(i.hasNext()){
+            l.info(i.next());
         }
     }
 }
