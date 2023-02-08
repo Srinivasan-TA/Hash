@@ -11,17 +11,9 @@ public class Hashmap {
         students.put(101, "Srini");
         students.put(102, "Ruchi");
         l.info("After invoking put() method ");
-        Iterator<String> i= students.values().iterator();
-        while(i.hasNext()){
-            l.info(i.next());
-        }
+        l.info("The names added are " + students);
         students.remove(101, "Srini");
         l.info("After invoking putIfAbsent() method ");
         l.info("The names added are " + students);
-
-
-        while(i.hasNext()){
-            l.info(i.next());
-        }
     }
 }
